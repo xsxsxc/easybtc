@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Wallet Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Wallet Simulation</h1>
+        <div id="wallet">
+            <button onclick="createWallet()">Create a New Wallet</button>
+        </div>
+        <div id="keys" style="display: none;">
+            <h2>Keys</h2>
+            <div>
+                <strong>Public Key:</strong> <span id="publicKey"></span>
+            </div>
+            <div>
+                <strong>Private Key:</strong> <span id="privateKey"></span>
+            </div>
+            <div>
+                <strong>Balance:</strong> $<span id="balance"></span>
+                <div class="add-balance">
+                    <button id="addBalanceBtn" onclick="toggleDropdown()">Add Balance</button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <button onclick="addBalance(10)">10$</button>
+                        <button onclick="addBalance(25)">25$</button>
+                        <button onclick="addBalance(50)">50$</button>
+                        <button onclick="addBalance(100)">100$</button>
+                        <input type="number" id="customAmount" placeholder="Custom Amount">
+                        <button onclick="addCustomBalance()">Add Custom</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="transactions" style="display: none;">
+            <h2>Transactions</h2>
+            <input type="text" id="recipient" placeholder="Recipient's Public Key">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="sendTransaction()">Send Transaction</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

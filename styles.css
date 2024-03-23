@@ -1,0 +1,78 @@
+/* Styles for Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.add-balance:hover .dropdown-content {
+    display: block;
+}
+
+/* Complex and Advanced CSS Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.add-balance {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.add-balance .dropdown-content {
+    right: 0;
+    border-radius: 5px;
+}
+
+.add-balance button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+#transactions input[type="text"],
+#transactions input[type="number"] {
+    width: calc(100% - 24px);
+}
